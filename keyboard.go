@@ -2,14 +2,15 @@ package keyboard
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
-	"fmt"
 	"strings"
 )
 
 // Чтение текста и конвертация в float64
 func GetFloat() (float64, error) {
+	fmt.Println("Hi")
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
 	if err != nil {
