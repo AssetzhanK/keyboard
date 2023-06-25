@@ -1,5 +1,7 @@
 package keyboard
 
+// Чтение текста и конвертация в float64
+
 import (
 	"bufio"
 	"os"
