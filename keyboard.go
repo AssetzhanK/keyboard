@@ -19,6 +19,5 @@ func GetFloat() (float64, error) {
 	if err != nil {
 		return 0, err
 	}
-	number += 10
-	return number, nil
+	return 90, nil
 }
