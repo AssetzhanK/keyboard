@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"os"
 	"strconv"
+	"fmt"
 	"strings"
 )
 
@@ -19,5 +20,6 @@ func GetFloat() (float64, error) {
 	if err != nil {
 		return 0, err
 	}
+	fmt.Println("Hi")
 	return number, nil
 }
