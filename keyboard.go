@@ -2,7 +2,6 @@ package keyboard
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -10,7 +9,6 @@ import (
 
 // Чтение текста и конвертация в float64
 func GetFloat() (float64, error) {
-	fmt.Println("Hi")
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
 	if err != nil {
@@ -21,6 +19,6 @@ func GetFloat() (float64, error) {
 	if err != nil {
 		return 0, err
 	}
-	fmt.Println("Hi")
+	number += 10
 	return number, nil
 }
